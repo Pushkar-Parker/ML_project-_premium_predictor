@@ -1,11 +1,11 @@
 import pandas as pd
 from joblib import load
 
-model_rest = load(r"D:\software\notebooks\Supervised_learning\practice\codebasics\health_project\app\artifacts\model_rest.joblib")
-model_young = load(r"D:\software\notebooks\Supervised_learning\practice\codebasics\health_project\app\artifacts\model_young.joblib")
+model_rest = load(r"artifacts/model_rest.joblib")
+model_young = load(r"artifacts/model_young.joblib")
 
-scaler_rest = load(r"D:\software\notebooks\Supervised_learning\practice\codebasics\health_project\app\artifacts\scaler_rest.joblib")
-scaler_young = load(r"D:\software\notebooks\Supervised_learning\practice\codebasics\health_project\app\artifacts\scaler_young.joblib")
+scaler_rest = load(r"artifacts/scaler_rest.joblib")
+scaler_young = load(r"artifacts/scaler_young.joblib")
 
 def preprocess_input(user_input):
     expected_columns = [
